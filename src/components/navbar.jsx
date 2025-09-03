@@ -14,6 +14,11 @@ const Navbar = () => {
       Home
    </a>
 
+   <a href="#"
+  className="!text-black font-medium hover:!text-sky-600">
+      Home
+   </a>
+
   </li>
   <li>
     <a href="#" 
