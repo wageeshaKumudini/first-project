@@ -1,6 +1,11 @@
 import React from "react";
 import heroImg from "../assets/Group 6.png";
 
+import webappicon from "../assets/website-content 1.png";
+import seoicon from "../assets/seo-tag 1.png";
+
+
+
 const Hero = () => {
   return (
     <section className="bg-[#e5f5fd] py-16">
@@ -33,16 +38,21 @@ const Hero = () => {
       </div>
 
       {/* 4 Containers Section */}
-      <div className="container mx-auto mt-16 px-6 md:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <h3 className="font-semibold text-lg text-gray-800">Web Applications</h3>
-            <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
-          </div>
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <h3 className="font-semibold text-lg text-gray-800">SEO</h3>
-            <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
-          </div>
+<div className="container mx-auto mt-16 px-6 md:px-12">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {/* Card 1 */}
+    <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <img src={webappicon} alt="Web App Icon" className="mx-auto w-12 h-12 mb-4" />
+      <h3 className="font-semibold text-lg text-gray-800">Web Applications</h3>
+      <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <img src={seoicon} alt="SEO Icon" className="mx-auto w-12 h-12 mb-4" />
+      <h3 className="font-semibold text-lg text-gray-800">SEO</h3>
+      <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
+    </div>
           <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
             <h3 className="font-semibold text-lg text-gray-800">AR/VR Solutions</h3>
             <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
