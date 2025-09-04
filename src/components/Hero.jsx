@@ -3,6 +3,9 @@ import heroImg from "../assets/Group 6.png";
 
 import webappicon from "../assets/website-content 1.png";
 import seoicon from "../assets/seo-tag 1.png";
+import vricon from "../assets/mvr.png";
+import mobileicon from "../assets/coding (1) 1.png";
+
 
 
 
@@ -53,14 +56,18 @@ const Hero = () => {
       <h3 className="font-semibold text-lg text-gray-800">SEO</h3>
       <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
     </div>
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <h3 className="font-semibold text-lg text-gray-800">AR/VR Solutions</h3>
-            <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
-          </div>
-          <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
-            <h3 className="font-semibold text-lg text-gray-800">Mobile Applications</h3>
-            <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
-          </div>
+    {/*card 3*/}
+        <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <img src={vricon} alt="vr Icon" className="mx-auto w-12 h-12 mb-4" />
+      <h3 className="font-semibold text-lg text-gray-800">ar/vr sollution</h3>
+      <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
+    </div>
+   {/*card 4*/}
+           <div className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <img src={mobileicon} alt="mobile App Icon" className="mx-auto w-12 h-12 mb-4" />
+      <h3 className="font-semibold text-lg text-gray-800">mobile application</h3>
+      <p className="text-gray-600 text-sm mt-2">lorem ipsum is empty</p>
+    </div>
         </div>
       </div>
     </section>
