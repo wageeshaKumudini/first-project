@@ -1,28 +1,24 @@
 import React from "react";
-import { FaSmile } from "../assets/FaSmile.png";
-import phoneImage from "../assets/phone.png"; 
-import {FaSmile} from "react-icons/fa";
-const NextSection = () => {
+import { FaSmile } from "react-icons/fa";
+import phoneImage from "../assets/newsletter.png"; 
+
+const NextSection2 = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-12">
-      {/* Heading */}
-      <div className="text-center mb-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-          Lorem Ipsum is simply dummy text of the printing.
-        </h2>
-
-        {/* Subheading */}
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          <br className="hidden sm:block" />
-          Lorem Ipsum has been the industry's
-        </p>
-      </div>
-
-      {/* Grid layout for left & right */}
+      
+      {/* Grid layout: Image on left, text on right */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
-        {/* ✅ Left Column */}
+        {/* ✅ Left Column - Phone image */}
+        <div className="flex justify-center">
+          <img
+            src={phoneImage}
+            alt="Phone"
+            className="w-[280px] md:w-[350px] lg:w-[400px] object-contain shadow-xl"
+          />
+        </div>
+
+        {/* ✅ Right Column - Text */}
         <div className="space-y-6">
           {/* Icon row */}
           <div className="flex items-center space-x-4">
@@ -52,18 +48,9 @@ const NextSection = () => {
             several top platforms including Android & iOS.
           </p>
         </div>
-
-        {/* ✅ Right Column - Phone image */}
-        <div className="flex justify-center">
-          <img
-            src={phoneImage}
-            alt="Phone"
-            className="w-[280px] md:w-[350px] lg:w-[400px] object-contain shadow-xl"
-          />
-        </div>
       </div>
     </section>
   );
 };
 
-export default NextSection;
+export default NextSection2;

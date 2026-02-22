@@ -9,6 +9,7 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-8">
   <li>
+    
    <a href="#"
   className="!text-black font-medium hover:!text-sky-600">
       Home
